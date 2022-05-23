@@ -25,7 +25,7 @@ That's it!
 
 And just for the info: 
 fping is used in Xymon with a list of all targets as argument (I dont k
-- fping -Ae www.ubi-network.ch wiki.ubi-network.ch www.raku.org ...
+- fping -Ae www.ubi-network.ch www.ubiquitous-network.ch www.raku.org ...
 
 Example:
 The first name is the name of my device in the xymon hosts file 
