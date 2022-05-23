@@ -27,7 +27,7 @@ Example:
 - The first name is the name of my device in the Xymon hosts file 
 - The result 
   - Start with color of the test and the IP address, 
-  - Then **the reverse DNS name **: **THIS IS THE FEATURE !!**
+  - Then **the reverse DNS name: THE FEATURE of "dns_fping" !!**
   - And the result og the test
 - The names here are not the same: It should be it mose cases, but It can be normal (you use CNAME in the Xymon hosts file) or not... 
 
