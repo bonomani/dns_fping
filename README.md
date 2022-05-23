@@ -18,6 +18,7 @@ Test "fping": it should be working and be in your path: correct it or modify the
 
 Installation: 
 - Copy "dns_fping" into /usr/local/sbin/dns_fping
+- Make it executable: chmod +x /usr/local/sbin/dns_fping
 - Change your "xymonserver.cfg"
 --  FPING="/usr/local/sbin/dns_fping"          
 
