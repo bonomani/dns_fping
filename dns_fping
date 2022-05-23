@@ -1,1 +1,11 @@
-
+!/usr/bin/awk -f
+BEGIN {
+      cmd="fping -Ane";
+      for (i=1;i<ARGC;++i) cmd=cmd" "ARGV[i];
+      while ( (cmd | getline result) > 0 ) {
+        split(result,a,") ") ;
+        split(a[1], b, " ") ;
+        print substr(b[2],2,length(b[2])-1)" "b[1]" "a[2] ;
+      }
+      close(cmd)
+}
