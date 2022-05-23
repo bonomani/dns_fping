@@ -25,7 +25,7 @@ That's it!
 
 Example:
 - The first name is the name of my device in the Xymon hosts file 
- -The result start with the IP address, then #the reverse DNS name# (This is the feature), and the result
+- The result start with the IP address, then **the reverse DNS name**, and the result og the test
 - The names here are not the same: It should be it mose cases, but It can be normal (you use CNAME in the Xymon hosts file) or not... 
 
 ![image](https://user-images.githubusercontent.com/8841264/169885468-89c66d9f-21b9-4be8-b0bb-e758f8210778.png)
