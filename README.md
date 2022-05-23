@@ -1,11 +1,11 @@
 # dns_fping
-A wrapper for Xymon for a "conn" test with reverse nslookup!
+A Xymon "conn" test with reverse nslookup!
 
 Motivation: 
 As I use a lot DNS "CNAME" for the name of my servers, I would like to have the real target of my tests
 -> So I created a awk wrapper around fping to activate the -n (the name option, that do a reverse lookup)
 
-This can also be usefull to 
+This can also be usefull to:
 - In a LAN to check that the reverse DNS pointer is set correctly 
 
 Warning: 
