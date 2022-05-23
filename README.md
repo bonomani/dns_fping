@@ -2,9 +2,9 @@
 A wrapper for Xymon for a "conn" test with nslookup!
 
 Motivation: 
-
-As I use DNS CNAME a lot, I would like to have the DNS resolution to know the real target of my tests
-So I created a awk wrapper around fping
+As I use a lot DNS "CNAME" for the name of my servers, I would like to have the DNS resolution to know the real target of my tests
+-> So I created a awk wrapper around fping
+-> And this is only really usefull if your tests target hostname that are DNS CNAME
 
 Prerequisit:
 - fping
