@@ -9,7 +9,7 @@ So I created a awk wrapper around fping
 Prerequisit:
 - fping
 
-Test "fping": it should be working and be your path: correct it or modify the path in the awk script!
+Test "fping": it should be working and be in your path: correct it or modify the path in the awk script!
 
 Installation: 
 - Copy "dns_fping" into /usr/local/sbin/dns_fping
