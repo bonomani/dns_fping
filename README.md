@@ -28,7 +28,7 @@ That's it!
 Example:
 - The first name is the name of my device in the Xymon hosts file 
 - The result 
-  - Start with **color** of the test, then the **IP address** 
+  - Start with the **color** of the test, then the **IP address** 
   - Then **the reverse DNS name: THE FEATURE of "dns_fping" !!**
   - And finally, **the result of the test**
 - As we can see, the names here are not the same: In most cases, it should be the same. If it differ: it can be normal as you use CNAME or not... 
