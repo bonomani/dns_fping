@@ -29,7 +29,7 @@ Example:
 - The result 
   - Start with color of the test and the IP address, 
   - Then **the reverse DNS name: THE FEATURE of "dns_fping" !!**
-  - And the result og the test
+  - And the result of the test
 - The names here are not the same: In most cases, it should be the same. If it differ, this can be normal: you use CNAME in the Xymon hosts file for example, or not... 
 
 ![image](https://user-images.githubusercontent.com/8841264/169885468-89c66d9f-21b9-4be8-b0bb-e758f8210778.png)
