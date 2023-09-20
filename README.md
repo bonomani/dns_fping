@@ -14,6 +14,7 @@ Warning:
 
 Prerequisit:
 - fping (test the path: which fping)
+
 Debian: apt-get install fping
 
 Test "fping": it should be working and be in your path: correct it or modify the path in the awk script!
