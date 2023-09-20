@@ -13,7 +13,8 @@ Warning:
 - As this is set globally to all "conn" test: this could have a performance impact! 
 
 Prerequisit:
-- fping
+- fping (test the path: which fping)
+Debian: apt-get install fping
 
 Test "fping": it should be working and be in your path: correct it or modify the path in the awk script!
 
