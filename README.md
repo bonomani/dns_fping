@@ -23,7 +23,8 @@ Installation:
 - Copy "dns_fping" into /usr/local/sbin/dns_fping
 - Make it executable: chmod +x /usr/local/sbin/dns_fping
 - Change your "xymonserver.cfg"
-  - FPING="/usr/local/sbin/dns_fping"          
+  - FPING="/usr/local/sbin/dns_fping"
+  - FPINGOPTS=""         
 
 That's it!
 
