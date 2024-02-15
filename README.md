@@ -6,7 +6,7 @@ Motivation:
 
 This is usefull to:
 - In a LAN, to check if the reverse DNS pointer is set correctly
-- If you use CNAME, this will show normally the "final" target hostname (but remember that this hostname ia obtain by a reverse lockup query only, so it show you nothing more if it is not set) 
+- If you use CNAME, this will show normally the "final" target hostname (but remember that this hostname is obtained by a reverse lookup query, it shows you nothing more if the PTR record is not set) 
 
 Warning: 
 - As this is set globally to all "conn" test: this could have a performance impact! 
