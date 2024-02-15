@@ -3,11 +3,10 @@ A Xymon "conn" test with reverse nslookup!
 
 Motivation: 
 - As I use a lot DNS "CNAME" for the name of my servers, I would like to have the real target of my tests
--> So I created a awk wrapper around fping to activate the -n (the "name" option, that do a reverse lookup)
 
-This can also be usefull to:
-- In a LAN, to check that the reverse DNS pointer is set correctly
-- If you use CNAME, this will show normally the "final" target hostname (but remember that this hostname ia obtain by a reverse lockup query only, so it can show you nothing if it is not set) 
+This is usefull to:
+- In a LAN, to check if the reverse DNS pointer is set correctly
+- If you use CNAME, this will show normally the "final" target hostname (but remember that this hostname ia obtain by a reverse lockup query only, so it show you nothing more if it is not set) 
 
 Warning: 
 - As this is set globally to all "conn" test: this could have a performance impact! 
@@ -39,5 +38,6 @@ Example:
 ![image](https://user-images.githubusercontent.com/8841264/169885468-89c66d9f-21b9-4be8-b0bb-e758f8210778.png)
 
 And just for the info: 
-fping is used in Xymon with a list of all hostnames as arguments (limit?)
-- fping -Ae www.ubi-network.ch www.ubiquitous-network.ch www.raku.org ...
+- Xymon send to the ping command a list of all ips (only ips, even for 0.0.0.0 entries) via stdin
+- the ping seems not to be used for dns resolution (done before)
+- echo "www.ubi-network.ch" | dns_fping 
