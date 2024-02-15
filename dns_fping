@@ -1,11 +1,20 @@
 #!/usr/bin/awk -f
 BEGIN {
-      cmd="fping -Ane";
-      for (i=1;i<ARGC;++i) cmd=cmd" "ARGV[i];
-      while ( (cmd | getline result) > 0 ) {
-        split(result,a,") ") ;
-        split(a[1], b, " ") ;
-        print substr(b[2],2,length(b[2])-1)" "b[1]" "a[2] ;
-      }
-      close(cmd)
+    fping_default_cmd = "fping -Ane";  # Default fping command
+
+    # Read from stdin and use getline with file redirection
+    while ((getline ip < "-") > 0) {
+        command = fping_default_cmd " " ip;
+        if (command | getline ping_answer > 0) {
+            # Extract hostname/IP and ping result directly from ping_answer
+            host_ipname = substr(ping_answer, 1, index(ping_answer, "(") - 2);  # Extract hostname/IP
+            ping_result = substr(ping_answer, index(ping_answer, ")") + 2);  # Extract ping result
+
+            # Output format: ip, host_ipname, ping_result
+            print ip, host_ipname, ping_result;
+            close(command);  # Close the command pipe
+        } else {
+            print "Error executing fping command for IP:", ip;
+        }
+    }
 }
