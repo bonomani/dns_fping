@@ -33,7 +33,7 @@ Example:
   - Start with the **color** of the test, then the **IP address** 
   - Then **the reverse DNS name: THE FEATURE of "dns_fping" !!**
   - And finally, **the result of the test**
-- As we can see, the names here are not the same: In most cases, it should be the same. If it differ: it can be normal as you use CNAME or not... 
+- As we can see, the names here are not the same! 
 
 ![image](https://user-images.githubusercontent.com/8841264/169885468-89c66d9f-21b9-4be8-b0bb-e758f8210778.png)
 
